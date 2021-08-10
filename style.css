@@ -1,0 +1,484 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+  }
+  body {
+    height: 100%;
+    width:100%;
+  }
+  .outer {
+    display: flex;
+    flex-wrap: wrap;
+    height:100vh;
+    overflow:scroll;
+  }
+  .panel {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
+    width:4%;
+    transition: all 0.5s ease;
+  }
+  .panel span {
+    text-align: center;
+  }
+  .panel h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform-origin: center;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  }
+  .home {
+    z-index:10;
+  }
+  .one {
+    background: #5ea3ec;
+    z-index:75;
+  }
+  .two {
+    background: #f64444;
+    z-index:50;
+  }
+  .three {
+    background: #ffb400;
+    z-index:25;
+  }
+  
+  .active {
+    width:88%;
+  }
+
+  .active h2 {
+    /*transform:rotate(0);*/
+    display: none;
+  }
+
+  .tagline {
+    font-size: 75px;
+    line-height: 86px;
+    letter-spacing: 0;
+    width: 100%;
+    max-width: 1000px;
+    font-weight: 400;
+  }
+
+  .hero {
+    width: 100%;
+    height: 800px;
+    background: tan;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .margin {
+    margin: 0 50px;
+  }
+
+  .img {
+    width: 375px;
+    height: 500px;
+    background: skyblue;
+    margin: 20px;
+  }
+
+  .logo {
+    margin: 60px;
+  }
+
+  h1 {
+    margin: 200px 60px 60px 60px;
+  }
+
+  .sticky {
+    position: fixed;
+  }
+
+  .address,
+  .map {
+    background: orange;
+    width: 587px;
+    height: 333px;
+    margin: 10px auto;
+  }
+
+  .cta {
+    text-align: center;
+    height: 200px;
+    margin: 50px;
+  }
+
+  .contacts {
+    margin: 50px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .contacts div {
+    margin: 0 auto;
+    padding: 100px;
+  }
+
+  .newsletter {
+    margin: 50px auto;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+  }
+
+  .left-link {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+
+  .right-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .zero {
+    text-decoration: line-through;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+  }
+
+  .email-input {
+    height: 40px;
+    margin-left: 50px;
+    width: 600px;
+  }
+
+  .market-events {
+    font-size: 72px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    padding: 60px 60px 100px;
+    margin: 0 auto;
+  }
+
+  .market-events-chinese {
+    margin: 0 50px;
+  }
+
+  .new-kind {
+    margin: 0 50px;
+    font-size: 113px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 645px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    text-align: center;
+    padding: 60px 60px 100px;
+    margin: 0 auto;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+  }
+
+  .grid p {
+    max-width: 33ch;
+  }
+
+  .description {
+    max-width: 40ch;
+    margin-left: 25px;
+  }
+
+  .see-all {
+    padding: 20px;
+    width: 180px;
+    position: absolute;
+    bottom: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #000;
+  }
+
+  .info {
+    margin: 100px 0;
+  }
+
+  .vendor {
+    font-size: 45px;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 180px;
+    display: inline-block;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  button:hover {
+    background: black;
+    color: white;
+  }
+
+  .food-hall-container {
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .food-hall {
+    font-size: 125px;
+    margin: 60px;
+    max-width: 5ch;
+  }
+
+  .food-img {
+    width: 370px;
+    height: 470px;
+    background: tan;
+    margin: 50px;
+  }
+
+  .happy-hour {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .community {
+    font-size: 125px;
+    margin: 60px 0;
+  }
+  .active .contacts {
+    height: 300px;
+  }
+
+  .chinese-span {
+    margin: 60px 0;
+  }
+
+  .active .chinese-span {
+    text-align: right;
+    font-size: 72px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    margin: 0;
+  }
+
+  .hours {
+    text-align: right;
+    margin: 50px;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 100px;
+    font-size: 28px;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .rice-roll-img {
+    display: none;
+    z-index: 5;
+    width: 200px;
+    height: 300px;
+    background: transparent;
+  }
+
+  .img-hover {
+    position: relative;
+  }
+
+  .img-hover:hover > .rice-roll-img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .unsplash {
+    margin: 10px 50px;
+  }
+
+  .unsplash a {
+    color: black;
+  }
+
+  .border {
+      background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%);
+      background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+      background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+      animation: border-dance 15s infinite linear;
+      animation-play-state: paused;
+    }
+
+  .border-small {
+      background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%);
+      background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+      background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+      animation: border-dance 3s infinite linear;
+      animation-play-state: paused;
+    }
+    
+    @keyframes border-dance {
+      0% {
+        background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+      }
+      100% {
+        background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+      }
+    }
+
+     .border:hover,
+     .border-small:hover {
+      animation-play-state: running;
+    }
+
+    @media (max-width: 700px) {
+      .one, 
+      .two,
+      .three {
+        display: none;
+      }
+
+      .active {
+        width: 100%;
+      }
+
+      .tagline {
+        font-size: 25px;
+        line-height: 50px;
+        letter-spacing: 0;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .hero {
+        width: 100%;
+        height: 400px;
+        background: tan;
+      }
+
+      .margin {
+        margin: 0;
+      }
+
+      h1 {
+        margin: 100px 0 50px 10px;
+      }
+
+      .new-kind {
+        margin: 0 10px;
+        font-size: 42px;
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .flex {
+        flex-direction: column;
+      }
+
+      .market-events {
+        font-size: 42px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns:  1fr;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+      .market-events-chinese {
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        text-align: center;
+        padding: 100px 0;
+        margin: 0 auto;
+        border-top: 2px dashed black;
+        border-bottom: 2px dashed black;
+      }
+
+      .cta {
+        text-align: center;
+        height: auto;
+        margin: 0;
+        padding: 25px;
+      }
+
+      .contacts {
+        margin: 0;
+        height: auto;
+      }
+
+      .active .contacts {
+        height: auto;
+      }
+
+      .newsletter {
+        margin: 0;
+        height: auto;
+        padding: 50px;
+    }
+
+      .email-input {
+        margin-left: 0;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer {
+      margin: 50px 0;
+    }
+
+    .left-footer {
+      display: flex;
+    }
+
+    .logo {
+      margin: 40px;
+    }
+
+    .see-all {
+      bottom: 40%;
+    }
+
+    }
