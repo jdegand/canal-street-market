@@ -21,7 +21,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [Acknowledgements](#acknowledgements)
+- [Useful Resources](#useful-resources)
 
 ## Overview
 
@@ -45,7 +45,7 @@ The [challenge](https://www.frontendpractice.com/project/canal-street-market) wa
 - [x] User story: Animate the dashed border as seen on the live website (expect double lines).
 - [x] User story: Create the sliding vertical panels, each with their own unique content.
 
-## Acknowledgements
+## Useful Resources
 
 - [Stack Overflow](https://stackoverflow.com/questions/62904378/why-could-window-scroll-event-not-being-fired) - Scroll Event Not Firing
 - [Stack Overflow](https://stackoverflow.com/questions/12522807/scroll-event-listener-javascript/18541827) - Scroll Event
