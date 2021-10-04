@@ -46,7 +46,7 @@ The [challenge](https://www.frontendpractice.com/project/canal-street-market) wa
 - [x] User story: Create the sliding vertical panels, each with their own unique content.
 
 ## Useful Resources
-
+- [Canal Street](https://web.archive.org/web/20210505210943/https://canalstreet.market/)
 - [Stack Overflow](https://stackoverflow.com/questions/62904378/why-could-window-scroll-event-not-being-fired) - Scroll Event Not Firing
 - [Stack Overflow](https://stackoverflow.com/questions/12522807/scroll-event-listener-javascript/18541827) - Scroll Event
 - [W3 Schools](https://www.w3schools.com/howto/howto_js_sticky_header.asp) - Sticky Header example
